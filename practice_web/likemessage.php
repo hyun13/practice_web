@@ -1,9 +1,9 @@
 <?php
 include_once 'header.php';
 
-if (!$loggedin) die();
-if (isset($_GET['view'])) $view = sanitizeString($_GET['view']);
-else                      $view = $user;
+if (!$loggedin) { die(); }
+if (isset($_GET['view'])) { $view = sanitizeString($_GET['view']); }
+else                      { $view = $user; }
 
 echo "<div class='main'>";
     $likemessage = array();

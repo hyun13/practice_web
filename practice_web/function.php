@@ -51,4 +51,8 @@ function showProfile($user)
         echo stripslashes($row[1]) . "<br clear=left /><br />";
     }
 }
+function render($file_path,$vars){
+    extract($vars);
+    include $file_path;
+}
 ?>
